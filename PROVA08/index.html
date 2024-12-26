@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de João Felipe dos Santos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .bio {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .bio img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+
+        .biografia{
+            text-align: justify;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        .skills, .projects {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .social-links a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .bio {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .bio img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfólio de João Felipe dos Santos</h1>
+    </header>
+    <div class="container">
+        <section class="bio">
+            <img src="JFIMAGEM.jpg" alt="João Felipe dos Santos">
+            <div>
+                <h2>Sobre Mim</h2>
+                <p class="biografia">Olá! Sou João Felipe dos Santos, tenho 39 anos e sou de Lauro de Freitas, Bahia. Sou administrador e possuo MBA em Gestão da Proteção da Informação. Profissional com sólida experiência em gestão de contratos administrativos e faturamento, incluindo a emissão de faturas, verificação de dados, cálculo de impostos e descontos, envio e gestão de pagamentos, acompanhamento de inadimplências, criação de relatórios financeiros e gerenciamento de conta vinculada, conforme a Lei Anticalote. Como gestor, lidero uma equipe com mais de 300 colaboradores, realizando também o gerenciamento de benefícios e assegurando o cumprimento de normas e prazos contratuais.</p>
+            </div>
+        </section>
+        
+        <section class="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Gestão de Contratos</li>
+                <li>Análise Financeira</li>
+                <li>Liderança e Gestão de Equipes</li>
+                <li>Otimização de Processos</li>
+                <li>Conhecimento em LGPD e Legislações</li>
+            </ul>
+        </section>
+        
+        <section class="projects">
+            <h2>Projetos</h2>
+            <ul>
+                <li>Implantação de LGPD no Tribunal de Contas</li>
+                <li>Mudança da base de dados do tribunal para nuvem</li>
+                <li>Implantação de sistema para gestão de contratos</li>
+                <li>Implantação de novos postos de vigilância</li>
+            </ul>
+        </section>
+        
+        <section class="contact">
+            <h2>Contato</h2>
+            <div class="social-links">
+                <a href="mailto:jfjss10@gmail.com">Email</a>
+                <a href="tel:71988318030">Celular</a>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu Email" required>
+                <textarea placeholder="Sua Mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
